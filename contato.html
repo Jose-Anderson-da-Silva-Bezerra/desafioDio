@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clinica faça sua consulta</title>
+    <link rel="stylesheet" href="aqui.css">
+</head>
+
+<body>
+    <div class="cabeçalho">
+        <header>
+            <img class="imagem" src="IMAGEM.png" height="88px;" alt="">
+            <a href="#" class="btn-menu" onclick="abrirMenu()">&#9776; Menu</a>
+        </header>
+    </div>
+    <div class="menu">
+        <nav id="menus"><br>
+            <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Instagram</a>
+        </nav>
+    </div>
+    <div id="conteudo">
+        <main>
+            <h1 class="h1">Acesse sua Autorização de Fornecimento</h1>
+            <p class="p1">O acesso à programação de entrega de materiais do Hospital de Clínicas de Porto Alegre (HCPA) é feito através de uma conexão segura. Sendo assim, é recomendado que o seu computador tenha instalado o certificado raiz do HCPA para uma navegação segura e para evitar mensagens de problemas no certificado.</p>
+            <img src="medico-atualizacao.jpg" alt="">
+            <h3>horário de funcionamento</h3>
+            <table>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Segunda a Sexta</th>
+                    <th>Sábados</th>
+                    <th>Feriados</th>
+                </tr>
+                <tr>
+                    <td>Clínica geral</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 14h</td>
+                    <td>08h - 14h</td>
+                </tr>
+                <tr>
+                    <td>Psicologia</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 14h</td>
+                    <td>08h - 14h</td>
+                </tr>
+                <tr>
+                    <td>Pediatría</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 18h</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Pediatría</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 18h</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </main>    
+    </div>
+    
+    <div class="container">
+
+    </div>
+    <script>
+        function abrirMenu(){
+            document.getElementById('menus').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+        }
+        function fecharMenu() {
+            document.getElementById('menus').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px';
+        }
+    </script>
+</body>
+
+</html>

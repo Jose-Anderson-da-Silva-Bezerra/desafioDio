@@ -1,0 +1,84 @@
+.cabeçalho{
+    height: 80px;
+}
+.menu{
+    height: 400px;
+    width: 100px;
+    float: left;
+}
+.id.conteudo{
+    height: 800px;
+    width: 1900px;
+    background-color: rgb(199, 209, 219);
+}
+.chatbox {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+}
+.container {
+    flex: 1;
+    height: 90px;
+    width: 90;
+    background-color: rgb(29, 88, 29);
+}
+footer{
+    color: white;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+.btn-menu{
+    color: rgb(228, 235, 228);
+    background-color: rgb(29, 88, 29);
+    padding: 25px;
+    font-size: 25px;
+}
+.h1{
+    font-size: 50px;
+    padding: 30px;   
+}
+.p1{
+    padding: 30px; 
+}
+.imagem{
+    width: 99%;
+}
+table, th, td{
+    border: 1px solid black;   
+}
+th, td{
+    padding: 5px 10px;
+}
+th{
+    background-color: black;
+    color: white;
+}
+nav{
+    
+    color: rgb(228, 235, 228);
+    height: 35%;
+    width: 0px;
+    background-color: rgb(29, 88, 29);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+nav a{
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+nav a:hover{
+    color: rgb(29, 88, 29);
+    background-color: white;
+    
+}

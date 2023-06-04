@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clinica faça sua consulta</title>
+    <link rel="stylesheet" href="aqui.css">
+</head>
+
+<body>
+    <div class="cabeçalho">
+        <header>
+            <img class="imagem" src="IMAGEM.png" height="88px;" alt="">
+            <a href="#" class="btn-menu" onclick="abrirMenu()">&#9776; Menu</a>
+        </header>
+    </div>
+    <div class="menu">
+        <nav id="menus"><br>
+            <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+            <a href="sobre.html" target="_blank">Sobre</a>
+            <a href="contato.html" target="_blank">Contato</a>
+            <a href="instagram.html" target="_blank">Instagram</a>
+        </nav>
+    </div>
+    <div id="conteudo">
+        <main>
+            <h1 class="h1">Acesse sua Autorização de Fornecimento</h1>
+            <p class="p1">O acesso à programação de entrega de materiais do Hospital de Clínicas de Porto Alegre (HCPA)
+                é feito através de uma conexão segura. Sendo assim, é recomendado que o seu computador tenha instalado o
+                certificado raiz do HCPA para uma navegação segura e para evitar mensagens de problemas no certificado.
+            </p>
+            <img src="medico-atualizacao.jpg" alt="">
+            <h3>horário de funcionamento</h3>
+            <table>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Segunda a Sexta</th>
+                    <th>Sábados</th>
+                    <th>Feriados</th>
+                </tr>
+                <tr>
+                    <td>Clínica geral</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 14h</td>
+                    <td>08h - 14h</td>
+                </tr>
+                <tr>
+                    <td>Psicologia</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 14h</td>
+                    <td>08h - 14h</td>
+                </tr>
+                <tr>
+                    <td>Pediatría</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 18h</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Pediatría</td>
+                    <td>08h - 19h</td>
+                    <td>08h - 18h</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+    <div>
+        <div>
+            <h1>Chat Simples</h1>
+    
+            <div id="chatbox"></div>
+    
+            <input type="text" id="message" placeholder="Digite uma mensagem">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>    
+        <h3>Endereço clínica Rua do bueiro</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31597.999030791765!2d-34.900746899999994!3d-8.1269282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb60ecfb19b%3A0xb442389feeea73be!2sBoa%20Viagem%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1685836204185!5m2!1spt-BR!2sbr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form name="signup" onsubmit="alert('Formulario Enviado');" target="_blank" method="POST" action="#">
+        <h2> Cadastro</h2>
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="container">
+        <footer><br>
+            <p>telefones de contato: 8199988-9955</p>
+            <p>E-mail: clinica@maxmail.com.br </p>
+        </footer>
+    </div>
+    <script>
+        function abrirMenu() {
+            document.getElementById('menus').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+        }
+        function fecharMenu() {
+            document.getElementById('menus').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px';
+        }
+    </script>
+</body>
+
+</html>
